@@ -1,0 +1,144 @@
+.header {
+  padding: 30px 40px;
+  background: #ffffff;
+}
+.nav-home h2 {
+  color: #545454;
+}
+.nav-home h4 {
+  color: #292929;
+}
+.nav-list a {
+  color: #545454;
+}
+
+.nav-list-active a {
+  color: #292929;
+}
+
+.slider {
+  flex-wrap: wrap;
+  row-gap: 30px;
+}
+.pets-nav {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  list-style-type: none;
+}
+.pets-nav li {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+}
+.pets-nav .button-innactive {
+  border: 2px solid #cdcdcd;
+}
+.button-innactive .line {
+  border: 1px solid #cdcdcd;
+  background: #cdcdcd;
+}
+.pets-nav .button-active {
+  border: 2px solid #f1cdb3;
+}
+.button-active .line {
+  border: 1px solid #292929;
+  background: #292929;
+}
+
+.nav-pages {
+  background-color: #f1cdb3;
+  font-family: georgia;
+  font-size: 20px;
+  color: #292929;
+  line-height: 115%;
+  letter-spacing: 0.06em;
+}
+.burger div {
+  border-color: #000000;
+}
+.pets .slider {
+  gap: 30px 40px;
+}
+.nav-list li a:hover {
+  color: #292929;
+}
+.line {
+  width: 9px;
+}
+.top-line {
+  transform: rotate(-35deg);
+}
+.bot-line {
+  transform: rotate(35deg);
+}
+.arrow-paginatoin {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.first-page,
+.last-page {
+  display: flex;
+  gap: 2px;
+}
+.right-pag .top-line {
+  transform: rotate(35deg);
+}
+.right-pag .bot-line {
+  transform: rotate(-35deg);
+}
+@media (max-width: 940px) {
+  .header {
+    padding: 30px;
+  }
+  .pets {
+    padding: 60px 30px 70px 30px;
+    gap: 30px;
+  }
+  .pets .slider {
+    overflow: hidden;
+    width: 580px;
+    height: 1365px;
+  }
+  .pets .title {
+    padding-top: 20px;
+  }
+  .pets-nav {
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+}
+@media (max-width: 767px) {
+  .burger-menu {
+    background-color: #ffffff;
+  }
+}
+@media (max-width: 700px) {
+  .header {
+    padding: 30px 20px;
+  }
+  .pets-container {
+    padding: 0;
+  }
+  .pets .title {
+    font-size: 25px;
+    padding-top: 0px;
+  }
+  .pets .slider {
+    width: 270px;
+    height: 1365px;
+  }
+  .pets-nav {
+    gap: 10px;
+    margin: 0;
+  }
+  .pets {
+    padding: 42px 10px;
+    gap: 42px;
+  }
+}
